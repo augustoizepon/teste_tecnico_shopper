@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Shopper App Readme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um aplicativo React para gerenciar produtos e packs da loja Shopper. Ele permite que você visualize uma lista de produtos, uma lista de packs, busque produtos por código, valide e atualize o preço de produtos.
 
-## Available Scripts
+## Como Iniciar o Aplicativo
 
-In the project directory, you can run:
+Para iniciar o aplicativo, siga estas etapas:
 
-### `npm start`
+1. Certifique-se de que você tem o [Node.js](https://nodejs.org/) e o [Yarn](https://yarnpkg.com/) instalados em seu sistema.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Clone ou baixe este repositório em seu computador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Abra um terminal e navegue até o diretório onde o aplicativo está localizado (a pasta client).
 
-### `npm test`
+4. Execute o seguinte comando para instalar as dependências:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   yarn install
+   ```
 
-### `npm run build`
+5. Após a conclusão da instalação das dependências, execute o seguinte comando para iniciar o aplicativo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   yarn start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. O aplicativo será iniciado e estará disponível no seu navegador em [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Recursos do Aplicativo
 
-### `npm run eject`
+O aplicativo oferece as seguintes funcionalidades:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Lista de Produtos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Exibe uma lista de produtos da loja Shopper, incluindo código, nome e preço.
+- Você pode atualizar a lista de produtos clicando no botão "Atualizar Lista".
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Lista de Packs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Apresenta uma lista de packs que contêm produtos em quantidades específicas.
+- Mostra o código do pack, a descrição (quantidade x nome do produto) e o preço total do pack.
+- Você pode atualizar a lista de packs clicando no botão "Atualizar Lista".
 
-## Learn More
+### Validação de Produto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Permite que você pesquise um produto por código.
+- Exibe o nome do produto e o valor atual do produto após a pesquisa.
+- Você pode inserir um novo valor para o produto e validar se a atualização é possível clicando no botão "Validar".
+- Se a atualização for válida, o botão "Atualizar Produto" estará habilitado para realizar a atualização.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Atualização de Produto
 
-### Code Splitting
+- Permite que você atualize o preço de um produto com um novo valor após a validação.
+- O botão "Atualizar Produto" estará habilitado somente se a atualização for válida.
+- Após clicar no botão "Atualizar Produto", o preço do produto será atualizado no servidor.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Alertas
 
-### Analyzing the Bundle Size
+- Um alerta será exibido se os dados inseridos para a atualização do produto não estiverem corretos ou se o novo valor ultrapassar 10% do valor atual.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Importante
 
-### Making a Progressive Web App
+- Certifique-se de que o servidor de backend esteja em execução e configurado corretamente para que o aplicativo funcione adequadamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Este aplicativo foi desenvolvido como uma interface de usuário para interagir com um servidor de backend que lida com os dados de produtos e packs da loja Shopper.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Divirta-se usando o aplicativo Shopper! Se você tiver alguma dúvida ou encontrar problemas, sinta-se à vontade para entrar em contato com a equipe de suporte.

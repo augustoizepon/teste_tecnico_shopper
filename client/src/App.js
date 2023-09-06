@@ -95,7 +95,7 @@ function App() {
   let alert = ``
 
   if (isUpdateButtonDisabled === true){
-    alert = `Por Favor, preencha os dados corretamente, o novo valor do produto não ultrapassa 10% do seu valor atual`
+    alert = `Por favor, preencha os dados corretamente, o novo valor do produto não pode ultrapassar 10% do seu valor atual`
   }
 
   // Função para buscar um produto pelo código
@@ -134,9 +134,9 @@ function App() {
               <li key={product.code}>
                 <table>
                   <tr>
-                    <th className="code--table">codigo</th>
+                    <th className="code--table">código</th>
                     <th className="name--table">nome</th>
-                    <th className="price--table">preco</th>
+                    <th className="price--table">preço</th>
                   </tr>
                   <tr>
                     <td className="code--table">{product.code}</td>
@@ -160,8 +160,8 @@ function App() {
                 <table>
                   <tr>
                     <th className="code-pack--table">cod. pack</th>
-                    <th className="description-pack--table">descricao</th>
-                    <th className="price-pack-table">preco</th>
+                    <th className="description-pack--table">descrição</th>
+                    <th className="price-pack-table">preço</th>
                   </tr>
                   <tr>
                     <td className="code--table">{pack.pack.pack_id}</td>
@@ -179,14 +179,14 @@ function App() {
         </div>
         <div className="register--container">
           <h2>Validação de produto</h2>
-          <label className="product-code--label">codigo do produto:*</label>
+          <label className="product-code--label">Código do Produto:*</label>
           <input name="codigo" type="number" className="product-code--input" inputmode="numeric" onChange={handleChangeValues}></input>
           <button className="search--btn" onClick={searchClickBtn} >Procurar</button>
-          <label className="product-name--label">nome do produto:</label>
+          <label className="product-name--label">Nome do Produto:</label>
           <p name="nome" className="product-name--p">{values.nomeProduto}</p>
-          <label className="product-first-value--label">valor atual do produto:</label>
+          <label className="product-first-value--label">Valor Atual do Produto:</label>
           <p className="product-first-value--p">{values.valorAtual}</p>
-          <label className="product-second-value--label">novo valor do produto:*</label>
+          <label className="product-second-value--label">Novo Valor do Produto:*</label>
           <input name="valorNovo" type="number" className="product-second-value--input" inputmode="numeric" onChange={handleChangeValues}></input>
           <button className="validation--btn" onClick={validationBtn}>Validar</button>
           <button className="update--btn" onClick={updateBtn} disabled={isUpdateButtonDisabled}>Atualizar Produto</button>

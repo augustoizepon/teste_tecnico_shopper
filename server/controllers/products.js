@@ -39,7 +39,7 @@ const updateProductData = (req, res) => {
 
     const writePriceChangesCsv = (changes) => {
         const csvWriter = createCsvWriter({
-            path: './database/csv/changes.csv',
+            path: '../tabela_de_dados/changes.csv',
             header: [
                 { id: 'product_code', title: 'Código do Produto' },
                 { id: 'new_price', title: 'Novo Preço' },

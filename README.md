@@ -3,8 +3,8 @@
 Este é um sistema que permite aos usuários visualizar listas de produtos e pacotes, validar e atualizar os preços dos produtos. O sistema é dividido em um lado do servidor e um lado do cliente.
 
 
-## Acesse o video sobre a instalação: [Vídeo de Instalação]().
-## Acesse o video sobre a aplicação: [Vídeo da Aplicação]().
+## Acesse o video sobre a instalação: [Vídeo de Instalação](https://youtu.be/_IB5SRuGmFg).
+## Acesse o video sobre a aplicação: [Vídeo da Aplicação](https://youtu.be/uJAs4pCn-Wk).
 
 ## Conteúdo
 
